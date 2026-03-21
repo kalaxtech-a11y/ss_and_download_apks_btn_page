@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ridely Taxi App Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+    }
+    header {
+      background: #111827;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img { height: 40px; }
+
+    .btn {
+      background: #FFD54F;
+      color: black;
+      padding: 12px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255,213,79,0.4); }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+    }
+    .hero h1 { font-size: 40px; margin-bottom: 10px; }
+    .hero p { opacity: 0.8; }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    .admin-box {
+      margin-top: 20px;
+      display: inline-block;
+      background: #1f2937;
+      padding: 15px 20px;
+      border-radius: 12px;
+      text-align: left;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .grid img {
+      width: 100%;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+    .grid img:hover { transform: scale(1.05); }
+
+    .features {
+      background: #111827;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      margin-top: 40px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://github.com/laxmanMurjani/images/blob/master/logo.png?raw=true" alt="Ridely Logo">
+</header>
+
+<section class="hero">
+  <h1>Ridely Taxi Booking App 🚖</h1>
+  <p>Launch your own Uber-like app with Flutter, Firebase & real-time features</p>
+
+  <div class="buttons">
+    <a class="btn" href="https://drive.google.com/uc?export=download&id=14IxWKpwBWQOKSRNksPI5X30dH-vsK71W">Passenger App</a>
+    <a class="btn" href="https://drive.google.com/uc?export=download&id=1bX5VBLsfFeZ2BGuNGCY782-NecO1eLaM">Driver App</a>
+    <a class="btn" href="https://kalaxtech-a11y.github.io/ridely_admin_demo/#/login" target="_blank">Admin Demo</a>
+  </div>
+
+  <div class="admin-box">
+    <strong>Admin Login</strong><br>
+    Email: admin@ridely.com<br>
+    Password: 123456
+  </div>
+</section>
+
+<section class="section">
+  <div class="features">
+    <h2>🔥 Key Features</h2>
+    <ul>
+      <li>Real-time ride booking & tracking</li>
+      <li>Google Maps integration</li>
+      <li>Push notifications</li>
+      <li>Multiple payments (Stripe, PayPal, Razorpay, Paystack)</li>
+      <li>Passenger, Driver & Admin apps</li>
+      <li>OnDuty / OffDuty mode</li>
+      <li>Clean architecture with GetX</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Passenger App</h2>
+  <div class="grid">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_user_1.jpeg?raw=true">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_user_2.jpeg?raw=true">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_user_3.jpeg?raw=true">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_user_4.jpeg?raw=true">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_user_5.jpeg?raw=true">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_user_6.jpeg?raw=true">
+  </div>
+</section>
+
+<section class="section">
+  <h2>Driver App</h2>
+  <div class="grid">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_driver_1.jpeg?raw=true">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_driver_2.jpeg?raw=true">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_driver_3.jpeg?raw=true">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_driver_4.jpeg?raw=true">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_driver_5.jpeg?raw=true">
+    <img src="https://github.com/laxmanMurjani/images/blob/master/ss_driver_6.jpeg?raw=true">
+  </div>
+</section>
+
+<footer>
+  <p>© Kalax Tech - Ridely Taxi App</p>
+</footer>
+
+</body>
+</html>
